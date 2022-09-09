@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style\main.css">
+</head>
+<body>
+    <video autoplay muted loop id="myVideo">
+        <source src="video\2.mp4" type="video/mp4">
+    </video>
+
+    <div class="container">
+        <div class="window">
+            <input type="text" id="imputWindow">
+        </div>
+        <div class="button">
+            <button onclick="Take('7')">7</button>
+            <button onclick="Take('8')">8</button>
+            <button onclick="Take('9')">9</button>
+            <button onclick="Take('/')">/</button>
+            <button onclick="Take('4')">4</button>
+            <button onclick="Take('5')">5</button>
+            <button onclick="Take('6')">6</button>
+            <button onclick="Take('*')">*</button>
+            <button onclick="Take('1')">1</button>
+            <button onclick="Take('2')">2</button>
+            <button onclick="Take('3')">3</button>
+            <button onclick="Take('-')">-</button>
+            <button onclick="Take('.')">.</button>
+            <button onclick="Take('0')">0</button>
+            <button onclick="Take('00')">00</button>
+            <button onclick="Take('+')">+</button>
+            <button id="clean" value="C" onclick="Clean()">C</button>
+            <button onclick="Delete()">Del</button>
+            <button onclick=" Result()">=</button>
+        </div>
+    </div>
+</body>
+<script src="script\script.js"></script>
+</html>
