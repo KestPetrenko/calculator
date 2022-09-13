@@ -28,4 +28,14 @@
         exp = element.value.slice(0, end);
         element.value = exp;
     }
+
+document.addEventListener("keydown", (e) => {
+    if (e.key === 'Backspace');
+    Delete()
+});
+
+document.addEventListener("keydown", (e) => {
+    if (e.key === 'Enter');
+    Result();
+});
     
