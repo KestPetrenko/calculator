@@ -1,21 +1,12 @@
-let container = document.querySelector(".container")
 
-let pageColor = localStorage.getItem("color");
 
     let element;
     let result;
-if (pageColor) {
-    container.style.backgroundColor = pageColor;
-    document.querySelector(`input[value='${pageColor}']`).checked = true;
-}
 
     function Clean() {
         element = document.getElementById("imputWindow");
         element.value = "";
     }
-document.querySelector("#saveButton").addEventListener("click", function () {
-    const form = document.forms[0];
-    let selectedColor = form.color.value;
 
     function Take(symbol) {
         element = document.getElementById("imputWindow");
@@ -46,9 +37,9 @@ document.addEventListener("keydown", (e) => {
 document.addEventListener("keydown", (e) => {
     if (e.key === 'Enter');
     Result();
-    localStorage.setItem("color", selectedColor);
-    container.style.backgroundColor = selectedColor;
 });
+
+let container = document.querySelector(".container")
 
 let pageColor = localStorage.getItem("color");
 
